@@ -1,0 +1,14 @@
+"0","library(reticulate)"
+"0","use_virtualenv(""~/.virtualenvs/r-reticulate"", required = TRUE)"
+"2","Warning: Previous request to `use_python(""C:/Program Files/Python39/python.exe"", required = TRUE)` will be ignored. It is superseded by request to `use_python(""C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/.virtualenvs/r-reticulate/Scripts/python.exe"")"
+"0","py_config()"
+"1","python:         C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/.virtualenvs/r-reticulate/Scripts/python.exe
+libpython:      C:/Program Files/Python39/python39.dll
+pythonhome:     C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/.virtualenvs/r-reticulate
+version:        3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)]
+Architecture:   64bit
+numpy:          C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/.virtualenvs/r-reticulate/Lib/site-packages/numpy
+numpy_version:  1.26.4
+
+NOTE: Python version was forced by use_python() function
+"

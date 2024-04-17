@@ -1,0 +1,22 @@
+"0","import os"
+"0","from pathlib import Path"
+"0",""
+"0","# Paths to the files that need to be deleted"
+"0","app_file_path = Path('app.py')"
+"0","dockerfile_path = Path('Dockerfile')"
+"0",""
+"0","# Check if app.py exists and delete it"
+"0","if app_file_path.exists():"
+"0","    app_file_path.unlink()"
+"0","    "
+"0","# Check if Dockerfile exists and delete it"
+"0","if dockerfile_path.exists():"
+"0","    dockerfile_path.unlink()"
+"0","    "
+"0","# Now run the vetiver function"
+"0","from vetiver import prepare_docker"
+"0","prepare_docker(b, 'penguin_model')"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'b' is not defined
+"

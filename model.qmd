@@ -1,0 +1,140 @@
+---
+title: "Model"
+format:
+  html:
+    code-fold: true
+---
+
+```{r}
+library(reticulate)
+use_virtualenv("~/.virtualenvs/r-reticulate", required = TRUE)
+py_config()
+
+```
+
+```{python}
+from palmerpenguins import penguins
+from pandas import get_dummies
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn import preprocessing
+```
+
+## Get Data
+
+```{python}
+df = penguins.load_penguins().dropna()
+
+df.head(3)
+```
+
+## Define Model and Fit
+
+```{python}
+X = get_dummies(df[['bill_length_mm', 'species', 'sex']], drop_first = True)
+y = df['body_mass_g']
+
+model = LinearRegression().fit(X, y)
+```
+
+## Get some information
+
+```{python}
+print(f"R^2 {model.score(X,y)}")
+print(f"Intercept {model.intercept_}")
+print(f"Columns {X.columns}")
+print(f"Coefficients {model.coef_}")
+```
+
+## Lab 2
+
+```{r}
+library(reticulate)
+
+
+# Install 'vetiver' (don't need to install everytime)
+# py_install("vetiver")
+
+```
+
+```{python}
+from vetiver import VetiverModel
+v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
+```
+
+```{python}
+
+```
+
+```{python}
+from vetiver import VetiverAPI
+
+# Create a FastAPI app from the VetiverModel
+app = VetiverAPI(v, check_prototype=True)
+
+
+```
+
+**Pins**
+
+```{python}
+from pins import board_folder
+from vetiver import vetiver_pin_write
+
+b = board_folder('data/model', allow_pickle_read=True)
+vetiver_pin_write(b,v)
+```
+
+**Auto-generate a fastAPI**
+
+```{python}
+app = VetiverAPI(v, check_prototype=True)
+```
+
+**Port connection http://localhost:8080**
+
+```{python}
+# COMMENT OUT WHEN YOU NEED TO RENDER
+
+# app.run(port = 8080)
+```
+
+## Lab 6
+
+```{python}
+import os
+from pathlib import Path
+
+# Paths to the files that need to be deleted
+app_file_path = Path('app.py')
+dockerfile_path = Path('Dockerfile')
+
+# Check if app.py exists and delete it
+if app_file_path.exists():
+    app_file_path.unlink()
+
+# Check if Dockerfile exists and delete it
+if dockerfile_path.exists():
+    dockerfile_path.unlink()
+
+# Now run the vetiver function
+from vetiver import prepare_docker
+prepare_docker(b, 'penguin_model')
+```
+
+## Lab 3
+
+```{python}
+import duckdb
+from palmerpenguins import penguins
+```
+
+```{python}
+import duckdb
+from palmerpenguins import penguins
+
+con = duckdb.connect('my-db.duckdb')
+df = con.execute("SELECT * FROM penguins").fetchdf().dropna()
+df.head()
+con.close()
+```

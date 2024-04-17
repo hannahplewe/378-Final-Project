@@ -1,0 +1,26 @@
+{
+    "id": "5B2EF8C6",
+    "path": "~/378 Final Project Quarto Website Project/Shiny_App/app.R",
+    "project_path": "Shiny_App/app.R",
+    "type": "r_source",
+    "hash": "208405612",
+    "contents": "",
+    "dirty": false,
+    "created": 1713382095492.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "84,25",
+        "scrollLine": "63"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1713385850,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1713385850770,
+    "read_only": false,
+    "read_only_alternatives": []
+}

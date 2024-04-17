@@ -1,0 +1,7 @@
+"0","from vetiver import VetiverAPI"
+"0",""
+"0","# Create a FastAPI app from the VetiverModel"
+"0","app = VetiverAPI(v, check_prototype=True)"
+"0",""
+"0",""
+"0",""

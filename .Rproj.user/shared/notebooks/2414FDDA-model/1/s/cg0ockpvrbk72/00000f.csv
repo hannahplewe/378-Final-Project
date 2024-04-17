@@ -1,0 +1,8 @@
+"0","model_path = ""C:\\Users\\C25Hannah.Plewe\\OneDrive - afacademy.af.edu\\Desktop\\Personal\\Documents\\378 Final Project Quarto Website Project\\data\\model\\penguin_model.pkl"""
+"0","with open(model_path, ""rb"") as f:"
+"0","    v = pickle.load(f)"
+"0",""
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\C25Hannah.Plewe\\OneDrive - afacademy.af.edu\\Desktop\\Personal\\Documents\\378 Final Project Quarto Website Project\\data\\model\\penguin_model.pkl'
+"
