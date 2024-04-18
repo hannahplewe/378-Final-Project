@@ -1,0 +1,20 @@
+"0","con = duckdb.connect('my-db.duckdb')"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'duckdb' is not defined
+"
+"0","df = con.execute(""SELECT * FROM penguins"").fetchdf().dropna()"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'con' is not defined
+"
+"0","con.close()"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'con' is not defined
+"
+"0","df.head(3)"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'df' is not defined
+"

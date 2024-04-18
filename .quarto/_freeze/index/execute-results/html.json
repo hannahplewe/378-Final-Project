@@ -1,0 +1,15 @@
+{
+  "hash": "1e5990c06d8001e6b2f45fac691dcf29",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"378 Final Project Quarto Website Project\"\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\ninstall.packages(\"palmerpenguins\")\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\nThe following package(s) will be installed:\n- palmerpenguins [0.1.1]\nThese packages will be installed into \"~/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/378 Final Project Quarto Website Project/renv/library/R-4.3/x86_64-w64-mingw32\".\n\n# Installing packages --------------------------------------------------------\n- Installing palmerpenguins ...                 OK [linked from cache]\nSuccessfully installed 1 package in 16 milliseconds.\n```\n\n\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(palmerpenguins)\ndata(package = 'palmerpenguins')\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nhead(penguins)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  <fct>   <fct>              <dbl>         <dbl>             <int>       <int>\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex <fct>, year <int>\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
