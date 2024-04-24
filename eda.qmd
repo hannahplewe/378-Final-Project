@@ -7,33 +7,10 @@ format:
 
 ## Penguin Size and Mass by Sex and Species
 
-```{r error=FALSE}
-#install.packages("ggplot2")
-```
 ```{r}
-#packageVersion("dbplyr")
+library(dbplyr)
 ```
 
-
-```{r}
-#install.packages("dbplyr")
-```
-
-
-```{r error=FALSE}
-#install.packages("dplyr")
-```
-
-```{r}
-#install.packages("tidyselect")
-```
-
-```{r}
-#install.packages("DBI")
-
-#install.packages("duckdb")
-
-```
 
 ```{r}
 #| warning: false
