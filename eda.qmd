@@ -11,6 +11,13 @@ format:
 library(dbplyr)
 ```
 
+```{r}
+# Check the current Python configuration
+library(reticulate)
+#py_config()
+
+```
+
 
 ```{r}
 #| warning: false
