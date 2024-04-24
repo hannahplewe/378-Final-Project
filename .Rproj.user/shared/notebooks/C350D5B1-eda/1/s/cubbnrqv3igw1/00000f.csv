@@ -1,13 +1,4 @@
 "0","install.packages(""tidyselect"")"
-"1","# Downloading packages -------------------------------------------------------
-"
-"1","- Downloading tidyselect from CRAN ...          "
-"1","OK [221.5 Kb in 2.1s]
-"
-"1","Successfully downloaded 1 package in 2.5 seconds.
-"
-"1","
-"
 "1","The following package(s) will be installed:
 "
 "1","- tidyselect [1.2.1]
@@ -19,22 +10,10 @@
 "0","Y"
 "1","
 "
-"1","# Installing packages --------------------------------------------------------
+"1","# Installing packages -------------------------------------------------------
 "
 "1","- Installing tidyselect ...                     "
-"2","Warning: object 'C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/378 Final Project Quarto Website Project/renv/staging/1/tidyselect/DESCRIPTION' not found"
-"2","Warning: object 'C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/378 Final Project Quarto Website Project/renv/staging/1/tidyselect/DESCRIPTION' not found"
-"2","Warning: object 'C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/378 Final Project Quarto Website Project/renv/staging/1/tidyselect/DESCRIPTION' not found"
-"2","Warning: object 'C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/378 Final Project Quarto Website Project/renv/staging/1/tidyselect/DESCRIPTION' not found"
-"2","Warning: object 'C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/378 Final Project Quarto Website Project/renv/staging/1/tidyselect/DESCRIPTION' not found"
-"2","Warning: object 'C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Desktop/Personal/Documents/378 Final Project Quarto Website Project/renv/staging/1/tidyselect/DESCRIPTION' not found"
-"1","OK [installed binary and cached in 2.9s]
+"1","OK [linked from cache]
 "
-"1","Successfully installed 1 package in 3.1 seconds.
-"
-"1","
-The following loaded package(s) have been updated:
-- tidyselect
-Restart your R session to use the new versions.
-
+"1","Successfully installed 1 package in 34 milliseconds.
 "

@@ -10,6 +10,15 @@ format:
 ```{r error=FALSE}
 #install.packages("ggplot2")
 ```
+```{r}
+#packageVersion("dbplyr")
+```
+
+
+```{r}
+#install.packages("dbplyr")
+```
+
 
 ```{r error=FALSE}
 #install.packages("dplyr")
