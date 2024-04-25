@@ -126,6 +126,13 @@
       ],
       "Hash": "40415719b5a479b87949f3aa0aee737c"
     },
+    "bmp": {
+      "Package": "bmp",
+      "Version": "0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c71b569d923cdc420491907928595aca"
+    },
     "bslib": {
       "Package": "bslib",
       "Version": "0.6.1",
@@ -260,6 +267,17 @@
         "utils"
       ],
       "Hash": "7ede2ee9ea8d3edbf1ca84c1e333ad1a"
+    },
+    "downloader": {
+      "Package": "downloader",
+      "Version": "0.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "digest",
+        "utils"
+      ],
+      "Hash": "f4f2a915e0dedbdf016a83b63477349f"
     },
     "dplyr": {
       "Package": "dplyr",
@@ -504,6 +522,50 @@
       ],
       "Hash": "03d741c92fda96d98c3a3f22494e3b4a"
     },
+    "igraph": {
+      "Package": "igraph",
+      "Version": "2.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "Matrix",
+        "R",
+        "cli",
+        "cpp11",
+        "grDevices",
+        "graphics",
+        "lifecycle",
+        "magrittr",
+        "methods",
+        "pkgconfig",
+        "rlang",
+        "stats",
+        "utils",
+        "vctrs"
+      ],
+      "Hash": "c3b7d801d722e26e4cd888e042bf9af5"
+    },
+    "imager": {
+      "Package": "imager",
+      "Version": "0.45.8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "Rcpp",
+        "downloader",
+        "grDevices",
+        "igraph",
+        "jpeg",
+        "magrittr",
+        "methods",
+        "png",
+        "purrr",
+        "readbitmap",
+        "stringr"
+      ],
+      "Hash": "8921cf1aa19c7de876ad4c1255592121"
+    },
     "isoband": {
       "Package": "isoband",
       "Version": "0.2.7",
@@ -514,6 +576,16 @@
         "utils"
       ],
       "Hash": "0080607b4a1a7b28979aecef976d8bc2"
+    },
+    "jpeg": {
+      "Package": "jpeg",
+      "Version": "0.1-10",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "031a0b683d001a7519202f0628fc0358"
     },
     "jquerylib": {
       "Package": "jquerylib",
@@ -779,6 +851,19 @@
       ],
       "Hash": "5e3c5dc0b071b21fa128676560dbe94d"
     },
+    "readbitmap": {
+      "Package": "readbitmap",
+      "Version": "0.1.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "bmp",
+        "jpeg",
+        "png",
+        "tiff"
+      ],
+      "Hash": "ec19e2be05f06df441857070a456dbe5"
+    },
     "renv": {
       "Package": "renv",
       "Version": "1.0.5",
@@ -1026,6 +1111,16 @@
         "withr"
       ],
       "Hash": "829f27b9c4919c16b593794a6344d6c0"
+    },
+    "tiff": {
+      "Package": "tiff",
+      "Version": "0.1-12",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "74b5f7f00e466398fdc0af8889add582"
     },
     "tinytex": {
       "Package": "tinytex",

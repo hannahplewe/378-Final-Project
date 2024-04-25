@@ -46,7 +46,7 @@ print(f"Columns {X.columns}")
 print(f"Coefficients {model.coef_}")
 ```
 
-## Lab 2
+# Lab 2
 
 ```{r}
 library(reticulate)
@@ -99,7 +99,7 @@ app = VetiverAPI(v, check_prototype=True)
 # app.run(port = 8080)
 ```
 
-## Lab 6
+# Lab 6
 
 ```{python}
 import os
@@ -122,7 +122,7 @@ from vetiver import prepare_docker
 prepare_docker(b, 'penguin_model')
 ```
 
-## Lab 3
+# Lab 3
 
 ```{python}
 import duckdb
@@ -137,4 +137,16 @@ con = duckdb.connect('my-db.duckdb')
 df = con.execute("SELECT * FROM penguins").fetchdf().dropna()
 df.head()
 con.close()
+```
+
+## Extra Information
+
+Predicting penguin mass based on sex, species, and bill length is crucial for understanding their health and fitness, which are key indicators of their ability to survive and reproduce in their challenging environments. This model can also provide valuable insights into ecological dynamics and species adaptation in response to changing climatic conditions.
+
+```{r}
+library(imager)
+
+image <- load.image('C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/RecognitionSpring2022/Notebooks/Pictures/penguinTypes.jpg')
+plot(image)
+
 ```
