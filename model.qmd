@@ -139,7 +139,9 @@ df.head()
 con.close()
 ```
 
-## Extra Information
+## Extra Information to improve the Final Project
+
+### Importance
 
 Predicting penguin mass based on sex, species, and bill length is crucial for understanding their health and fitness, which are key indicators of their ability to survive and reproduce in their challenging environments. This model can also provide valuable insights into ecological dynamics and species adaptation in response to changing climatic conditions.
 
@@ -150,3 +152,77 @@ image <- load.image('C:/Users/C25Hannah.Plewe/OneDrive - afacademy.af.edu/Recogn
 plot(image)
 
 ```
+
+### Decision Tree (my favorite)
+
+```{r}
+#| message: false 
+#| warning: false 
+library(tidyverse)      # for data wrangling
+library(ISLR2)          # for data sets
+library(tidymodels)     # for modeling
+library(xgboost)        # for boosting
+library(randomForest)   # for random forests and bagging
+library(rpart.plot)     # for plotting trees
+library(vip)            # for variable importance
+```
+
+
+
+```{r}
+library(palmerpenguins)
+data(package = 'palmerpenguins')
+```
+
+```{r}
+head(penguins)
+```
+
+```{r}
+guin_split <- initial_split(penguins, prop = 0.80, strata = bill_depth_mm)
+```
+
+```{r}
+#splitting trainging / testing
+guin_train <- training(guin_split)  
+guin_test <- testing(guin_split)
+```
+
+
+```{r}
+regtree_spec <- decision_tree() %>%      
+  set_engine("rpart") %>%      
+  set_mode("regression")
+```
+
+
+```{r}
+#| warning: false 
+
+# fit the model
+
+reg_tree_fit <- regtree_spec %>%    
+  fit(body_mass_g ~ ., data = guin_train)   
+
+reg_tree_fit
+```
+
+```{r}
+#| warning: false 
+
+# plot tree
+reg_tree_fit %>%      
+  extract_fit_engine() %>%      
+  rpart.plot()
+```
+
+
+```{r}
+#calc test rsme
+
+augment(reg_tree_fit, new_data = guin_test) %>%      
+  rmse(truth = body_mass_g, estimate = .pred)
+```
+
+
+
