@@ -224,5 +224,8 @@ augment(reg_tree_fit, new_data = guin_test) %>%
   rmse(truth = body_mass_g, estimate = .pred)
 ```
 
+### Python model
+
+I spent 2+ hours trying to engineer a python model with google and chat gpt. Due to system compatibility issues and never ending error codes, I was not able to produce a python model, even though that would have been cool. 
 
 
